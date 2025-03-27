@@ -8,6 +8,7 @@ screen = Screen()
 screen.colormode(255)
 
 # MAKING SQUARE AND HEXAGON :)
+tim.speed('fastest')
 for i in range(3,11):
     for j in range(i):
         tim.forward(100)
@@ -15,13 +16,18 @@ for i in range(3,11):
     tim.color(random.randint(0,255), random.randint(0,255), random.randint(0,255))
 
 # Making turtle to move at random directions
+tim.clear()
+tim.setheading(0)
+tim.penup()
+tim.home()
+tim.pendown()
+
 def random_color():
     r = random.randint(0,255)
     g = random.randint(0,255)
     b = random.randint(0,255)
     return r, g, b
 
-tim.speed('fastest')
 tim.pensize(6)
 directions = [0,90,180,270]
 for i in range(200):
@@ -30,13 +36,18 @@ for i in range(200):
     tim.setheading(random.choice(directions))
 
 # MAKING Circle to spirograph
+tim.clear()
+tim.setheading(0)
+tim.penup()
+tim.home()
+tim.pendown()
+tim.pensize(1)
 def random_color():
     r = random.randint(0,255)
     g = random.randint(0,255)
     b = random.randint(0,255)
     return r, g, b
 
-tim.speed('fastest')
 def draw_spirograph(size_of_gap):
     for _ in range(int(360 / size_of_gap)):
         tim.color(random_color())
