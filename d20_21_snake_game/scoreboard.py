@@ -8,7 +8,7 @@ class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
         self.score_point = 0
-        with open("D-20_21_Snake game/data.txt") as data:
+        with open("d20_21_snake_game/data.txt") as data:
             self.high_score = int(data.read())
         self.shape(None)
         self.color("white")
@@ -28,7 +28,7 @@ class Scoreboard(Turtle):
     def reset(self):
         if self.score_point > self.high_score:
             self.high_score = self.score_point
-            with open("D-20_21_Snake game/data.txt", "w") as data:
+            with open("d20_21_snake_game/data.txt", "w") as data:
                 data.write(f"{self.high_score}")
         self.score_point = 0 
         self.update_scoreboard()
