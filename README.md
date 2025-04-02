@@ -19,3 +19,7 @@ d22 - Pong game
 d23 - Turtle crossing game
 
 ![D-23](assets/d23.gif)
+
+d25 - States quiz game
+
+![D-25](assets/d25.gif)
