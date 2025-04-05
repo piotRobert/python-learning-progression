@@ -1,4 +1,4 @@
-d28 - States quiz game
+d28 - Pomodoro_app
 
 ![D-28](assets/d28.gif)
 
