@@ -1,3 +1,7 @@
+d28 - States quiz game
+
+![D-28](assets/d28.gif)
+
 d25 - States quiz game
 
 ![D-25](assets/d25.gif)
