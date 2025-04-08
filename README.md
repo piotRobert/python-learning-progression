@@ -1,4 +1,4 @@
-d29 - Password Manager
+d29 and d30 - Password Manager
 
 ![D-29](assets/d29.gif)
 
