@@ -40,6 +40,13 @@ import pandas
 
 data = pandas.read_csv("d26_list_dict_comprehension/nato_phonetic_alphabet.csv")
 new_dict = {row.letter:row.code for (index, row) in data.iterrows()}
-word = input("Enter a word :): ").upper()
-output_list = [new_dict[letter] for letter in word]
-print(output_list)
+is_on = True
+while is_on:
+    word = input("Enter a word :): ").upper()
+    try:
+        output_list = [new_dict[letter] for letter in word]
+    except KeyError:
+        print("Sorry, only letters in the alphabet please.")
+    else:
+        is_on = False
+        print(output_list)
