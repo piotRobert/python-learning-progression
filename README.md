@@ -1,3 +1,7 @@
+d34 - Upgraded quiz from d17
+
+![D-34](assets/d34.gif)
+
 d31 - Flash cards
 
 ![D-31](assets/d31.gif)
